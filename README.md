@@ -33,7 +33,7 @@ Purpose usage, detailed explanation what is does and any other information you w
 
 ##### Open Locally
 
-- Click on the link to my repository: [My Repository]()
+- Click on the link to my repository: [My Repository](https://github.com/saoud/HairSalon.Solution.git)
 - Click on the green "Code" button and copy the repository URL
 - Open your terminal and use the command `git clone REPO URL HERE` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
@@ -131,7 +131,7 @@ TODO
 If any errors or bugs occur with installation, delete both bin and obj folders and follow the Compiling and Installing Packages instructions again. Get help or report a bug you have found in the .NET platform at [.NET Support](https://dotnet.microsoft.com/platform/support). Or please email me, <githubissues@saoud.dev>.
 
 ## Technologies Used
-
+```
 - .NET Core 5.0.1
 - ASP.NET Core MVC
 - ASP.NET Core Razor Pages
@@ -144,7 +144,7 @@ If any errors or bugs occur with installation, delete both bin and obj folders a
 - MySQL
 - MySQL Workbench
 - VS Code
-
+```
 ### License
 
 This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
