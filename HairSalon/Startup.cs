@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ReplaceWithNameSpace.Models; //Replace with namespace
+using HairSalon.Models;
 
-namespace ReplaceWithProjectName
+namespace HairSalon
 {
   public class Startup
   {
@@ -14,7 +14,7 @@ namespace ReplaceWithProjectName
     {
       var builder = new ConfigurationBuilder()
           .SetBasePath(env.ContentRootPath)
-              .AddJsonFile("appsettings.json");
+          .AddJsonFile("appsettings.json");
       Configuration = builder.Build();
     }
 
@@ -25,7 +25,7 @@ namespace ReplaceWithProjectName
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<REPLACEWITHProjectNameContext>(options => options
+        .AddDbContext<HairSalonContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
 
@@ -40,7 +40,7 @@ namespace ReplaceWithProjectName
       });
 
       app.UseStaticFiles();
-
+      
       app.Run(async (context) =>
       {
         await context.Response.WriteAsync("Hello World!");
