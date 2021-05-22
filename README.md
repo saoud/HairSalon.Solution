@@ -147,6 +147,6 @@ If any errors or bugs occur with installation, delete both bin and obj folders a
 ```
 ### License
 
-This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/saoud/csharp-TDD-template/blob/main/LICENSE)
 
 Copyright (c) 2021 Saoud Rana
