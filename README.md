@@ -1,30 +1,32 @@
 <div align="center">
 
-# Application Name
+# Eau Claire's Salon
 
 </div>
 
-<h3 align="center">Description of application, date-2021</h3>
+<h3 align="center">Description of application, May-21-2021</h3>
 <h4 align="center"> By Saoud Rana</h4>
 
 ## Description
 
-Purpose usage, detailed explanation what is does and any other information you want users and other developers to have
+MVC web application to help a hair salon owner manage her employees and their clients.
 
-## Specifications/User Stories
 
-<details>
-  <summary>Expand</summary>
-
-### Describe: Name()
-
-| Test | Expect |
-| ---- | ------ |
-
-</details>
+## Specifications
+- As the salon owner, I need to be able to see a list of all stylists.
+- As the salon owner, I need to be able to select a stylist, see their details, and see a list of all clients that belong to that stylist.
+- As the salon owner, I need to add new stylists to our system when they are hired.
+- As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added.
 
 ## Setup/Installation Requirements
+Go to `HairSalon` Folder and create a file called `appsettings.json` file and input the following script (note the name of the database below needs to match the name of the database you created
 
+```{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=top_restaurants;uid=root;pwd=[ENTERPASSWORDHERE];"
+  }
+}
+```
 ##### Software Requirements
 
 1. Internet browser
