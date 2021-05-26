@@ -74,26 +74,17 @@ MySQL is a type of database software used to create, edit, query, and manage SQL
 - Use the command `dotnet restore`
 
 <details>
+### Update Database Using MySQL Workbench
+
+1. Open MySQL Workbench
+2. Click on Server > Data Import in the top navigation bar
+3. Select `Import from Self-Contained File`
+4. Select the `Default Target Schema` or create new schema
+5. Select all Schema Objects you would like to import
+6. Select `Dump Structure and Data`
+7. Click `Start Import`
 
   <summary>Expand for Database Installation Essentials!</summary>
-
-### Database Connection
-
-Create a connection string to connect the database to the web application
-
-1. Create a file in the root directory called `appsettings.json`
-2. Add the code below:
-
-```
-{
-  "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=top_restaurants;uid=root;pwd=password;"
-  }
-}
-```
-
-- TODO CHANGE DBNAME
-- Put in your MySQL password in `pwd=YourPassword`. Change the server, port, and uid if necessary.
 
 ### Import Database Using Entity Framework Core
 
@@ -106,15 +97,6 @@ Create a connection string to connect the database to the web application
 2. To update the database with any changes made to the code, use the command `dotnet ef migrations add [MigrationsName]`
 3. Use the command `dotnet ef database update` to update the database
 
-### Update Database Using MySQL Workbench
-
-1. Open MySQL Workbench
-2. Click on Server > Data Import in the top navigation bar
-3. Select `Import from Self-Contained File`
-4. Select the `Default Target Schema` or create new schema
-5. Select all Schema Objects you would like to import
-6. Select `Dump Structure and Data`
-7. Click `Start Import`
 
 </details>
 
