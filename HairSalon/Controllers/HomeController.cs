@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace HairSalon.Controllers
+namespace Salon.Controllers
 {
   public class HomeController : Controller
   {
     [HttpGet("/")]
-    public ActionResult Index()
+    public ActionResult HomeIndex()
     {
       return View();
     }
