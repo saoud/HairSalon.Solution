@@ -23,7 +23,7 @@ Go to `HairSalon` Folder and create a file called `appsettings.json` file and in
 
 ```{
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=top_restaurants;uid=root;pwd=[ENTERPASSWORDHERE];"
+      "DefaultConnection": "Server=localhost;Port=3306;database=saoud_rana;uid=root;pwd=[ENTERPASSWORDHERE];"
   }
 }
 ```
