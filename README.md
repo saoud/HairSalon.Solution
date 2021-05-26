@@ -19,7 +19,7 @@ MVC web application to help a hair salon owner manage her employees and their cl
 - As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added.
 
 ## Setup/Installation Requirements
-Go to `HairSalon` Folder and create a file called `appsettings.json` file and input the following script (note the name of the database below needs to match the name of the database you created
+Go to `HairSalon` Folder and create a file called `appsettings.json` file and input the following script (note the name of the database below needs to match the name of the database you created) Also change `[ENTERPASSWORDHERE]` to the password you set prior.
 
 ```{
   "ConnectionStrings": {
@@ -123,6 +123,7 @@ Create a connection string to connect the database to the web application
 - To view in browser, navigate to TODO folder in the command line
 - Use the command `dotnet run` to execute the compiled code and start a localhost
 - In browser navigate to http://localhost:5000
+- Or Navigate to  https://localhost:5001 for the SSL version.
 
 ## Known Bugs
 
