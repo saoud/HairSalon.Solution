@@ -16,52 +16,52 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `Clients`
+-- Table structure for table `clients`
 --
 
-DROP TABLE IF EXISTS `Clients`;
+DROP TABLE IF EXISTS `clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `Clients` (
+CREATE TABLE `clients` (
   `ClientId` int(11) NOT NULL AUTO_INCREMENT,
   `ClientName` varchar(255) DEFAULT NULL,
   `StylistId` int(11) DEFAULT NULL,
   PRIMARY KEY (`ClientId`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Clients`
+-- Dumping data for table `clients`
 --
 
-LOCK TABLES `Clients` WRITE;
-/*!40000 ALTER TABLE `Clients` DISABLE KEYS */;
-INSERT INTO `Clients` VALUES (1,'test',0),(2,'test',0),(3,'asdasdasdasd',0),(4,'asdasda',1),(5,'dhjghjtyhbd',2);
-/*!40000 ALTER TABLE `Clients` ENABLE KEYS */;
+LOCK TABLES `clients` WRITE;
+/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
+INSERT INTO `clients` VALUES (1,'test',0),(2,'test',0),(3,'asdasdasdasd',0),(4,'asdasda',1),(5,'dhjghjtyhbd',2),(6,'Test Client',3);
+/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Stylists`
+-- Table structure for table `stylists`
 --
 
-DROP TABLE IF EXISTS `Stylists`;
+DROP TABLE IF EXISTS `stylists`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `Stylists` (
+CREATE TABLE `stylists` (
   `StylistId` int(11) NOT NULL AUTO_INCREMENT,
   `StylistName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistId`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Stylists`
+-- Dumping data for table `stylists`
 --
 
-LOCK TABLES `Stylists` WRITE;
-/*!40000 ALTER TABLE `Stylists` DISABLE KEYS */;
-INSERT INTO `Stylists` VALUES (1,'asdasd'),(2,'fghfghfgh');
-/*!40000 ALTER TABLE `Stylists` ENABLE KEYS */;
+LOCK TABLES `stylists` WRITE;
+/*!40000 ALTER TABLE `stylists` DISABLE KEYS */;
+INSERT INTO `stylists` VALUES (1,'asdasd'),(2,'fghfghfgh'),(3,'Testing');
+/*!40000 ALTER TABLE `stylists` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -73,4 +73,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-25 19:23:57
+-- Dump completed on 2021-05-26 18:59:36
